@@ -1,0 +1,16 @@
+/* pages/test/test.wxss */
+.container{
+    font-size:32px;
+    color:#fc0;
+    background-color:#aaa
+}
+.imglist{
+    background-color:#eee
+}
+.imglist image{
+    width:21rpx;
+    height:21rpx
+}
+.swiper image{
+  width: 100%
+}

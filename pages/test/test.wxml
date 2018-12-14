@@ -1,0 +1,22 @@
+<!--pages/test/test.wxml-->
+<!-- 轮播图 -->
+<swiper autoplay="{{false}}" class='swiper'>
+  <swiper-item>
+    <image src='/pages/img/banner1.png'></image>
+  </swiper-item>
+  <swiper-item>
+    <image src='/pages/img/banner2.png'></image>
+  </swiper-item>
+  <swiper-item>
+    <image src='/pages/img/banner3.png'></image>
+  </swiper-item>
+</swiper>
+<text>welcome mini program</text>
+<view class='container'>
+  <text>{{msg}}</text>
+</view>
+<view wx:for="{{list}}">
+  {{item.id}}:{{item.addr}}
+</view>
+<view class='imglist'><image src='/pages/img/up.jpg'></image></view>
+<view><navigator>跳转</navigator></view>
