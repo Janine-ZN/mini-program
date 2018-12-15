@@ -11,7 +11,18 @@ Page({
     imgs: [
       {id:1,img_url:"/pages/img/banner1.png"},
       {id:2,img_url: "/pages/img/banner2.png"},
-      {id:3,img_url: "/pages/img/banner3.png"}]
+      {id:3,img_url: "/pages/img/banner3.png"}],
+    list:[
+      { id: 1, img_url: "/pages/img/grid-01.png",msg:"美食1"},
+      { id: 2, img_url: "/pages/img/grid-02.png", msg: "美食2" },
+      { id: 3, img_url: "/pages/img/grid-03.png", msg: "美食3" },
+      { id: 4, img_url: "/pages/img/grid-04.png", msg: "美食" },
+      { id: 5, img_url: "/pages/img/grid-05.png", msg: "美食" },
+      { id: 6, img_url: "/pages/img/grid-06.png", msg: "美食" },
+      { id: 7, img_url: "/pages/img/grid-07.png", msg: "美食" },
+      { id: 8, img_url: "/pages/img/grid-08.png", msg: "美食" },
+      { id: 9, img_url: "/pages/img/grid-09.png", msg: "美食" },
+    ]
   },
   //事件处理函数
   bindViewTap: function() {

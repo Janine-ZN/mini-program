@@ -9,11 +9,15 @@
   </block>
 </swiper>
 </view>
-
-
-
-
 <!-- 九宫格 -->
-
-
+<view class='index-nav'>
+  <block wx:for="{{list}}" wx:key="{{item.id}}">
+  <view class="nav-item">
+    <image src="{{item.img_url}}" mode='aspectFill' lazy-load=''></image>
+    <text>{{item.msg}}</text>
+  </view>
+  </block>
+</view>
+<!-- 分隔线 -->
+<view class='divider'></view>
 <!-- 按钮 -->

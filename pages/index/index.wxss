@@ -29,5 +29,40 @@
   height: 390rpx;
   width: 100%
 }
-
-
+/* 功能二：九宫格 */
+/* 1：父元素弹性布局 */
+.index-nav{
+  display:flex;
+  flex-wrap: wrap
+}
+/* 2：子元素弹性布局 */
+.index-nav .nav-item{
+  height: 200rpx;
+  width: 33.33333%;
+  box-sizing:border-box;
+  /* border:1px solid #ccc; */
+  /* item 子元素弹性布局 */
+  display:flex;/*子元素按列布局*/
+  flex-direction:column;/*水平居中 垂直居中*/
+  justify-content: center;
+  align-items: center;
+  /* 小程序：推荐使用字体大小使用 px */
+  font-size: 14px;
+  /* 右侧添加边框 底部添加边框 */
+  border-right:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+}
+/* 将 3 6 9 元素边框去掉 */
+.index-nav .nav-item:nth-child(3){
+  border-right:0 none; 
+}
+/* 3：修改图片宽度高度 */
+.index-nav image{
+  width: 80rpx;
+  height: 80rpx;
+  margin-bottom: 10rpx
+}
+.divider{
+  height: 20rpx;
+  background-color: #f1f1f1;
+}
