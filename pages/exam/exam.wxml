@@ -1,0 +1,36 @@
+<!--pages/exam/exam.wxml-->
+<text>{{mag}}</text>
+<button>ok</button>
+<text wx:if="{{age==19}}">很年轻</text>
+<text wx:elif="{{age<19}}">太小了</text>
+<text wx:else>老了</text>
+<button>ok</button>
+<text decode='{{true}}'>js &nbsp; &lt; &gt; css html</text>
+<block wx:if="{{age<19}}">
+  <view>hello</view>
+  <view>world</view>
+</block>
+<view wx:for="{{user}}" wx:key="item.id">
+    {{item.id}} * {{item.name}} 
+  </view>
+<view wx:for="{{list}}">{{item}}{{index}}</view>
+<view wx:for="{{list}}" wx:for-index="id" wx:for-item='obj'>值：{{id}}{{obj}}</view>
+<button>ok</button>
+<view wx:for="{{nums1}}" wx:for-index="i" wx:for-item='obj1'>
+  <view wx:for="{{nums2}}" wx:for-index="j" wx:for-item='obj2'>
+    {{obj1}} * {{obj2}} = {{obj1*obj2}}
+  </view>
+</view>
+<button>ok</button>
+<text>pages/exam/exam.wxml</text>
+<button>ok</button>
+<text>pages/exam/exam.wxml</text>
+<button>ok</button>
+<text>pages/exam/exam.wxml</text>
+<button>ok</button>
+<text>pages/exam/exam.wxml</text>
+<button>ok</button>
+<text>pages/exam/exam.wxml</text>
+<button>ok</button>
+<text>pages/exam/exam.wxml</text>
+<button>ok</button>

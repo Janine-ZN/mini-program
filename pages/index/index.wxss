@@ -19,3 +19,15 @@
 .usermotto {
   margin-top: 200px;
 }
+
+/* 功能一：轮播图 */
+/* 问题1：swiper 高度不够 效果图 390rpx */
+/* 问题2：image 高度不够 效果图 390rpx 宽度不够 */
+/* 移动项目：小程序 效果图 390 与390rpx */
+/* 移动项目 ：vue 效果图 390 与 195rpx */
+.sslider,.slider swiper,.slider image{
+  height: 390rpx;
+  width: 100%
+}
+
+

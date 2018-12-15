@@ -7,7 +7,11 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    imgs: [
+      {id:1,img_url:"/pages/img/banner1.png"},
+      {id:2,img_url: "/pages/img/banner2.png"},
+      {id:3,img_url: "/pages/img/banner3.png"}]
   },
   //事件处理函数
   bindViewTap: function() {

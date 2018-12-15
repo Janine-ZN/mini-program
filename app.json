@@ -1,13 +1,15 @@
 {
   "pages": [
-    "pages/test/test",
     "pages/index/index",
+    "pages/exam/exam",
+    "pages/test/test",
     "pages/logs/logs"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "backgroundTextStyle": "ligth",
+    "navigationBarBackgroundColor": "#ff6610",
+    "navigationBarTitleText": "学子商城",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
   }
 }
