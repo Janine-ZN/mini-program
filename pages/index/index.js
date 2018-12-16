@@ -3,6 +3,19 @@
 const app = getApp()
 
 Page({
+  onShareAppMessage:function(){
+
+  },
+  // 为九宫格中内容绑定点击事件
+  handleJumpNews:function(event){
+    var id = event.target.dataset.id;
+    console.log(123)
+    if(id == 1){
+      wx.navigateTo({
+        url: '/pages/news/news',
+      })
+    }
+  },
   data: {
     motto: 'Hello World',
     userInfo: {},
@@ -21,7 +34,7 @@ Page({
       { id: 6, img_url: "/pages/img/grid-06.png", msg: "美食" },
       { id: 7, img_url: "/pages/img/grid-07.png", msg: "美食" },
       { id: 8, img_url: "/pages/img/grid-08.png", msg: "美食" },
-      { id: 9, img_url: "/pages/img/grid-09.png", msg: "美食" },
+      { id: 9, img_url: "/pages/img/grid-09.png", msg: "美食" }
     ]
   },
   //事件处理函数
@@ -30,7 +43,21 @@ Page({
       url: '../logs/logs'
     })
   },
+  // 1. 创建方法 getImageList 获取服务器上数据
+  getImageList:function(){
+    wx.request({
+      url: 'http://127.0.0.1:3000/imagelist',
+      success:(res)=>{
+        this.setData({
+          list:res.data
+        })
+      }
+    })
+  },
+  // 2. 在 onload 调用，将数据保存 list
   onLoad: function () {
+    this.getImageList();
+
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

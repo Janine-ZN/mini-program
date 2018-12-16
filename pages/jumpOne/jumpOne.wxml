@@ -1,0 +1,12 @@
+<!--pages/jumpOne/jumpOne.wxml-->
+<text>pages/jumpOne/jumpOne.wxml</text>
+<button bindtap="handleTap01">跳转方式一</button>
+<button bindtap="handleTap02">跳转方式二</button>
+<text>+++++++++发送ajax请求+++++++++</text>
+<button bindtap='handleAjax01'>1. 点击一下发送请求</button>
+<view>接收返回数据{{msg}}</view>
+<text>+++++++++发送ajax请求+++++++++</text>
+<button bindtap='handleAjax02'>2. 点击一下发送请求</button>
+<view wx:for="{{list}}" wx:key="item.id">
+  <image src="{{item.img_url}}"></image>
+</view>

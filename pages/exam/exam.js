@@ -24,7 +24,6 @@ Page({
     console.log(event)
   },
 
-
   // event 事件对象：事件类型、触发时间；位置；...
   tapName:function(event){
     console.log("我被点了1");
