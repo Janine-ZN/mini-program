@@ -1,4 +1,6 @@
 <!--pages/exam/exam.wxml-->
+<button bindtap='handleTapBack'>回退按钮</button>
+<button bindtap='handleTapPara'>跳转时，传参</button>
 <!-- 冒泡 -->
 <text>事件冒泡处理</text>
 <text>事件非冒泡处理</text>

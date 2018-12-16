@@ -16,14 +16,21 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    id:0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // 获取参数
+      console.log(options)
+      var ids = options.id
+      // 低版本小程序 2017
+      // this.data.id=id
+      this.setData({
+        id:ids
+      })
   },
 
   /**

@@ -1,5 +1,16 @@
 // pages/exam/exam.js
 Page({
+  handleTapBack:function(){
+    // 关闭当前exam组件，回退到parameter
+    wx.navigateBack({
+      url:"/pages/parameter/parameter"
+    })
+  },
+  handleTapPara:function(){
+    wx.navigateTo({
+      url: "/pages/parameter/parameter?id=100"
+    })
+  },
   handleTap1:function(event){
     console.log('1:外层父元素')
     console.log(event)
