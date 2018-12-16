@@ -1,5 +1,33 @@
 // pages/exam/exam.js
 Page({
+  handleTap1:function(event){
+    console.log('1:外层父元素')
+    console.log(event)
+  },
+  handleTap2: function (event) {
+    console.log('2:中间层元素')
+    console.log(event)
+  }, 
+  handleTap3: function (event) {
+    console.log('3:子元素')
+    console.log(event)
+  },
+
+
+  // event 事件对象：事件类型、触发时间；位置；...
+  tapName:function(event){
+    console.log("我被点了1");
+    console.log(event.target.id);
+  },
+  // 长按操作
+  langtapName:function(event){
+    console.log("我被点了2");
+    console.log(event);
+  },
+  langpressName:function(event){
+    console.log("我被点了3")
+    console.log(event);
+  },
 
   /**
    * 页面的初始数据

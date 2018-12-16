@@ -1,4 +1,31 @@
 <!--pages/exam/exam.wxml-->
+<!-- 冒泡 -->
+<text>事件冒泡处理</text>
+<text>事件非冒泡处理</text>
+<view id='outer' bindtap='handleTap1'>
+    outer view
+  <view id='middle' bindtap='handleTap2'>
+    middle view
+      <!-- <view id='inner' bindtap='handleTap3'> -->
+      <view id='inner' catchtap='handleTap3'>
+        inner view
+      </view>
+  </view>
+</view>
+
+<!-- 小程序事件处理 -->
+<view id="tabTest" data-idx="19" bindtap='tapName'>
+  Click me
+</view>
+<view id="longtapTest" data-idx='29' bindlongtap='langtapName'>
+  click langtap
+</view>
+<view id="longpressTest" data-idx='39' bindlongtap='langpressName'>
+  Click langpressName
+</view>
+<view id="test" data-idx='49' bindlongtap='langpressName' bindtap='tapName'>
+  Click test
+</view>
 <text>{{mag}}</text>
 <button>ok</button>
 <text wx:if="{{age==19}}">很年轻</text>
@@ -21,16 +48,3 @@
     {{obj1}} * {{obj2}} = {{obj1*obj2}}
   </view>
 </view>
-<button>ok</button>
-<text>pages/exam/exam.wxml</text>
-<button>ok</button>
-<text>pages/exam/exam.wxml</text>
-<button>ok</button>
-<text>pages/exam/exam.wxml</text>
-<button>ok</button>
-<text>pages/exam/exam.wxml</text>
-<button>ok</button>
-<text>pages/exam/exam.wxml</text>
-<button>ok</button>
-<text>pages/exam/exam.wxml</text>
-<button>ok</button>

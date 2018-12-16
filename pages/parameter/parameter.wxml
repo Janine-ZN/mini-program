@@ -1,0 +1,13 @@
+<!--pages/parameter/parameter.wxml-->
+<text>参数传递</text>
+<view id='tapName' bindtap='handleTap' data-idx="100" data-age="19">click me</view>
+<!-- 跳转 -->
+<text>不同组件之间跳转</text>
+<navigator url='/pages/exam/exam'>
+  点击：跳转下一个组件绝对路径
+</navigator>
+<navigator url='../exam/exam'>
+  点击：跳转下一个组件相对路径
+</navigator>
+<text>使用编程的方式</text>
+<button bindtap='handleJump1'>跳转一</button>
