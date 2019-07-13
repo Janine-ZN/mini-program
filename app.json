@@ -10,10 +10,11 @@
     "pages/news/news"
   ],
   "window": {
-    "backgroundTextStyle": "ligth",
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#ff6610",
     "navigationBarTitleText": "学子商城",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

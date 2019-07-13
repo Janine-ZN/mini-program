@@ -12,3 +12,8 @@
 <text>使用编程的方式</text>
 <button bindtap='handleJump1'>跳转一</button>
 <view>{{id}}</view>
+<view class="father" bindtap="handleRed">
+  <!-- <view class="son" bindtap="handleBlue"></view> -->
+  <!-- 阻止事件冒泡 -->
+  <view class="son" catchtap="handleBlue"></view>
+</view>

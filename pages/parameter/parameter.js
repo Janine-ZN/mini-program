@@ -12,6 +12,12 @@ Page({
       url: '/pages/exam/exam',
     })
   },
+  handleRed:function(){
+    console.log("red");
+  },
+  handleBlue: function () {
+    console.log("blue");
+  },
   /**
    * 页面的初始数据
    */

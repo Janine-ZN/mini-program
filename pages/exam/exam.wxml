@@ -1,4 +1,10 @@
-<!--pages/exam/exam.wxml-->
+<!-- pages/exam/exam.wxml -->
+<checkbox checked="{{ false }}">多选</checkbox>
+<!-- for循环 -->
+<view wx:for="{{ todos }}">
+  <checkbox checked="{{ item.status }}"></checkbox>
+  <text> {{ item.name }} </text>
+</view>
 <button bindtap='handleTapBack'>回退按钮</button>
 <button bindtap='handleTapPara'>跳转时，传参</button>
 <!-- 冒泡 -->

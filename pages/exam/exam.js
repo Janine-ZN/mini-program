@@ -48,7 +48,11 @@ Page({
     list:[1,3,5,7,9],
     nums1: [1, 2, 3, 4, 5, 6, 7, 8, 9],
     nums2: [1, 2, 3, 4, 5, 6, 7, 8, 9],
-    user:[{id:1,name:"tom"},{id:2,name:"jerry"}]
+    user:[{id:1,name:"tom"},{id:2,name:"jerry"}],
+    todos:[
+      {name:'javascript',status:false},
+      { name: 'html', status: true},
+      { name: 'css', status: false}]
   },
 
   /**

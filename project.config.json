@@ -12,6 +12,8 @@
 	"appid": "wxbe646aaa0744e08f",
 	"projectname": "weixin",
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
